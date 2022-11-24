@@ -613,7 +613,7 @@ public class DiscreteFourierTransform extends BaseDataProcessor implements Share
             ((MsgPan) Main.msgPan).setMsg(1, "" + df.format(shortSumInDB));
         }
 
-        if (slratio < 1.1) {
+        if ( shortSumInDB < 44.5 ) {
             //  ... silent mode
             silentMode = true;
             silentTime++;

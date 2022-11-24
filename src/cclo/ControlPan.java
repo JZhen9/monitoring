@@ -411,7 +411,8 @@ public class ControlPan implements Share {
                 }
             }
         }
-        if (best > 0.75) {
+        show("\n--" + type + " score: " + best);
+        if (best > 0.5) {
             matchList.offer((String) type);
             while (matchList.size() > 2) {
                 matchList.poll();

@@ -127,14 +127,14 @@ public class Chain implements Share {
         }
         diff += minDist(a[PATT_SIZE - 1], b);
         diff += minDist(a[PATT_SIZE - 2], b);
-        diff += minDist(a[PATT_SIZE - 3], b);
+        diff += minDist(a[PATT_SIZE - 3], b)/2;
 
         diff += minDist(b[PATT_SIZE - 1], a);
         diff += minDist(b[PATT_SIZE - 2], a);
-        diff += minDist(b[PATT_SIZE - 3], a);
+        diff += minDist(b[PATT_SIZE - 3], a)/2;
         // show("Diff: " + diff);
 
-        if (diff < 6) {
+        if (diff < 18) {
             return true;
         } else {
             return false;
